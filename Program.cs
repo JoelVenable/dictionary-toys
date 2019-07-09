@@ -22,6 +22,12 @@ namespace dictionary_toys
       {
         Console.WriteLine($"We sold {toy.Value} units of {toy.Key}.");
       }
+
+      var christmasToys = new Dictionary<string,int>() {
+        {"Nutcracker", 523},
+        {"Christmas Shoes", 278}
+      };
+      
     }
   }
 }
