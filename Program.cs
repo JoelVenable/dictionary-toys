@@ -23,11 +23,22 @@ namespace dictionary_toys
         Console.WriteLine($"We sold {toy.Value} units of {toy.Key}.");
       }
 
-      var christmasToys = new Dictionary<string,int>() {
+      var christmasToys = new Dictionary<string, int>() {
         {"Nutcracker", 523},
         {"Christmas Shoes", 278}
       };
-      
+
+      foreach (KeyValuePair<string, int> ctoy in christmasToys)
+      {
+        toysSold.Add(ctoy.Key, ctoy.Value);
+      }
+
+      Console.WriteLine("After adding christmas toys...");
+      foreach (KeyValuePair<string, int> toy in toysSold)
+      {
+        Console.WriteLine($"We sold {toy.Value} units of {toy.Key}.");
+      }
+
     }
   }
 }
