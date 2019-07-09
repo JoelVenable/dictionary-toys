@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace dictionary_toys
 {
@@ -15,6 +16,12 @@ namespace dictionary_toys
 
       toysSold.Add("Bicycles", 87);
 
+
+      // Iterate
+      foreach (KeyValuePair<string, int> toy in toysSold)
+      {
+        Console.WriteLine($"We sold {toy.Value} units of {toy.Key}.");
+      }
     }
   }
 }
